@@ -1,0 +1,23 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+p, h2 {
+  margin: 0; }
+
+button:focus {
+  background: none; }
+
+.center-block {
+  margin: 0 auto !important;
+  float: none !important; }
+
+.hamburger {
+  margin: -15px !important; }
