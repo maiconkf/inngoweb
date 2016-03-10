@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="center-block">
+					<div class="center-block box-scroll">
 						<p class="f20 white-text center-align a-lightitalic">Scroll to discover</p>
 						<a href="javascript:;" class="arrow-scroll bounce"></a>
 					</div>
@@ -84,7 +84,7 @@
 			</div>
 			<div class="types">
 				<div class="clearfix">
-					<div class="col left offset-m1">
+					<div class="col left m5 offset-m1">
 						<div class="col m12">
 							<h3 class="f60 hd-medium">Arrigang</h3>
 							<p class="f18 a-light col m8">Arirang Restaurant offers traditional Korean cuisine with an exceptional ambiance and unique furnishing.</p>
@@ -99,7 +99,7 @@
 					<div class="col m6 left">
 						<img class="responsive-img left" src="http://placehold.it/720x949">
 					</div>
-					<div class="col right offset-m1">
+					<div class="col right m5 offset-m1">
 						<div class="col m12">
 							<h3 class="f60 hd-medium">Arrigang</h3>
 							<p class="f18 a-light col m8">Arirang Restaurant offers traditional Korean cuisine with an exceptional ambiance and unique furnishing.</p>

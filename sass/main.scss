@@ -24,22 +24,31 @@ $colorBtn :  #E2CF83;
 			margin: 15% auto 12%;
 		}
 
-		.arrow-scroll {
-			background-image: url(../img/arrow-scroll.png);
-			width: 39px;
-			height: 39px;
+		.box-scroll {
 			position: absolute;
 			bottom: 118px;
 			left: 50%;
-			margin-left: -20px;
-			-webkit-animation: bounce 1s infinite;
+			width: 156px;
+			height: 80px;
+			margin-left: -78px!important;
+
+			.arrow-scroll {
+				background-image: url(../img/arrow-scroll.png);
+				width: 39px;
+				height: 39px;
+				position: absolute;
+				top: 30px;
+				left: 50%;
+				margin-left: -20px;
+				-webkit-animation: bounce 1s infinite;
+			}
 		}
 
 		@-webkit-keyframes bounce {
-			0%       { bottom: 166px; }
-			25%, 75% { bottom: 162px; }
-			50%      { bottom: 160px; }
-			100%     { bottom: 166px; }
+			0%       { top: 30px; }
+			25%, 75% { top: 38px; }
+			50%      { top: 40px; }
+			100%     { top: 30px; }
 		}
 
 		.check-booking {
@@ -135,6 +144,7 @@ $colorBtn :  #E2CF83;
 
 		img {
 			height: 100vh;
+			width: 100%
 		}
 
 		.btn {
@@ -187,4 +197,29 @@ $colorBtn :  #E2CF83;
 		margin-top: 45px;
 		float: left;
 	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1679px) {
+	#restaurants {
+		h2 {
+			margin-top: -80px
+		}
+		.offset-m1.m6 {
+			width: 75%;
+		}
+	}
+	#more {
+		.m5 {
+			width: 50%;
+			margin-left: 0
+		}
+		.box-experiences {
+			margin-left: 0;
+			width: 100%
+		}
+	}
+
+	.f58 { font-size: 41px; }
+	.f60 { font-size: 46px; }
+	.f200 { font-size: 140px; }
 }

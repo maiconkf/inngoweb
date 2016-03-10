@@ -38,5 +38,5 @@ gulp.task('default',function() {
     gulp.watch(scss, ['scss']);
     gulp.watch(css, ['styles']);
     gulp.watch(js, ['scripts']);
-    // gulp.src('./img/*').pipe(imagemin({progressive: true, use: [pngquant()]})).pipe(gulp.dest('./dist/img/'));
+    gulp.src('./img/*').pipe(imagemin({progressive: true, use: [pngquant()]})).pipe(gulp.dest('./dist/img/'));
 });
