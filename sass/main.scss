@@ -1,13 +1,21 @@
 @import 'sprite';
 
 $colorBtn :  #E2CF83;
+$lineHeight : 34.6px;
 
+.btn, .btn-large {
+	background-color: $colorBtn;
+	text-transform: inherit;
+}
+
+/* MENU */
 #hero {
 	width: 100%;
 	height: 100vh;
 	background-size: 100% 100%;
 	float: left;
 	position: relative;
+	background-image: url(../img/bg-home.png);
 
 	.content {
 		margin: 48px;
@@ -59,15 +67,54 @@ $colorBtn :  #E2CF83;
 			bottom: 13px;
 			left: 50%;
 			margin-left: -280px;
+			padding: 16px;
+
+			.calendar {
+				width: 157px;
+				height: 45px;
+				line-height: 45px;
+				position: relative;
+
+				input {
+					border: 1px solid #E6E6E6;
+					padding: 0 14px;
+					width: 120px;
+					cursor: pointer;
+					box-sizing: border-box;
+				}
+
+				.box-calendar {
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 38px;
+					height: 45px;
+					border: 1px solid #E6E6E6;
+
+					.icon-calendar {
+						@include sprite($calendar);
+						margin: 7px auto;
+					}
+				}
+
+				&:first-child {
+					margin-right: 14px;
+				}
+			}
+
+			.btn {
+				width: 160px;
+				height: 42px;
+				line-height: 42px;
+				padding: 0;
+				margin-left: 24px;
+			}
 		}
 
 	}
-
-	&.home {
-		background-image: url(../img/bg-home.png);
-	}
 }
 
+/* HOME */
 #rooms {
 	padding: 93px 0 150px;
 	clear: both;
@@ -80,16 +127,11 @@ $colorBtn :  #E2CF83;
 	}
 
 	p {
-		line-height: 34.6px;
+		line-height: $lineHeight;
 		letter-spacing: 0.02em;
 	}
 
-	.btn {
-		background-color: $colorBtn;
-		text-transform: inherit;
-		width: 227px;
-		height: 55px;
-		line-height: 55px;
+	.btn-large {
 		margin: 60px 0 138px;
 	}
 
@@ -133,7 +175,7 @@ $colorBtn :  #E2CF83;
 			margin: 270px 0 0;
 
 			p {
-				line-height: 34.6px;
+				line-height: $lineHeight;
 				padding-left: 0!important
 			}
 		}
@@ -147,12 +189,7 @@ $colorBtn :  #E2CF83;
 			width: 100%
 		}
 
-		.btn {
-			background-color: $colorBtn;
-			text-transform: inherit;
-			width: 227px;
-			height: 55px;
-			line-height: 55px;
+		.btn-large {
 			margin: 60px 0;
 			clear: both;
 		}
@@ -199,6 +236,102 @@ $colorBtn :  #E2CF83;
 	}
 }
 
+/* ACCOMODATIONS */
+#intern {
+	padding: 125px 0;
+
+	.info {
+		.a-light {
+			letter-spacing: -0.02em;
+			line-height: $lineHeight;
+			margin-bottom: 120px
+		}
+	}
+
+	.card {
+		width: 49%;
+
+		&:nth-child(even) {
+			float: right;
+		}
+
+		h2 {
+			margin-top: 15px;
+		}
+
+		.btn-large {
+			margin: 40px auto 30px;
+			float: none;
+			display: block;
+		}
+
+		.extended {
+			p {
+				line-height: $lineHeight;
+				margin: 30px 0;
+			}
+
+			&.no-booking {
+				.m4 {
+					width: 37%;
+
+					&:last-child {
+						width: 26%;
+						float: right;
+					}
+				}
+			}
+
+			.check-booking {
+				margin-top: 40px;
+
+				.calendar {
+					width: 157px;
+					height: 45px;
+					line-height: 45px;
+					position: relative;
+
+					input {
+						border: 1px solid #E6E6E6;
+						padding: 0 14px;
+						width: 120px;
+						cursor: pointer;
+						box-sizing: border-box;
+					}
+
+					.box-calendar {
+						position: absolute;
+						right: 0;
+						top: 0;
+						width: 38px;
+						height: 45px;
+						border: 1px solid #E6E6E6;
+
+						.icon-calendar {
+							@include sprite($calendar);
+							margin: 7px auto;
+						}
+					}
+
+					&:first-child {
+						margin-right: 14px;
+					}
+				}
+
+				.btn {
+					width: 160px;
+					height: 42px;
+					line-height: 42px;
+					margin: 25px auto;
+					display: block;
+					padding: 0
+				}
+			}
+		}
+	}
+}
+
+/*  FOOTER */
 #footer {
 	clear: both;
 
@@ -245,6 +378,11 @@ $colorBtn :  #E2CF83;
 				color: #959595;
 				margin-left: 15px
 			}
+		}
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }

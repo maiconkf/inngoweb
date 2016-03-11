@@ -3,7 +3,7 @@
 		<div class="container clearfix">
 			<div class="col m11 center-block">
 				<a href="javascript:;" class="logo">
-					<img src="dist/img/inn-go-hotel.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza">
+					<img src="../dist/img/inn-go-hotel.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza">
 				</a>
 				<div class="row">
 					<div class="col m4">

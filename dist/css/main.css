@@ -1,12 +1,18 @@
 .icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
+.btn, .btn-large {
+  background-color: #E2CF83;
+  text-transform: inherit; }
+
+/* MENU */
 #hero {
   width: 100%;
   height: 100vh;
   background-size: 100% 100%;
   float: left;
-  position: relative; }
+  position: relative;
+  background-image: url(../img/bg-home.png); }
   #hero .content {
     margin: 48px;
     padding: 45px 48px; }
@@ -25,7 +31,7 @@
       height: 80px;
       margin-left: -78px !important; }
       #hero .content .box-scroll .arrow-scroll {
-        background-position: 0px -70px;
+        background-position: 0px -101px;
         background-repeat: no-repeat;
         overflow: hidden;
         display: block;
@@ -53,10 +59,44 @@
       position: absolute;
       bottom: 13px;
       left: 50%;
-      margin-left: -280px; }
-  #hero.home {
-    background-image: url(../img/bg-home.png); }
+      margin-left: -280px;
+      padding: 16px; }
+      #hero .content .check-booking .calendar {
+        width: 157px;
+        height: 45px;
+        line-height: 45px;
+        position: relative; }
+        #hero .content .check-booking .calendar input {
+          border: 1px solid #E6E6E6;
+          padding: 0 14px;
+          width: 120px;
+          cursor: pointer;
+          box-sizing: border-box; }
+        #hero .content .check-booking .calendar .box-calendar {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 38px;
+          height: 45px;
+          border: 1px solid #E6E6E6; }
+          #hero .content .check-booking .calendar .box-calendar .icon-calendar {
+            background-position: 0px -70px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: block;
+            width: 29px;
+            height: 31px;
+            margin: 7px auto; }
+        #hero .content .check-booking .calendar:first-child {
+          margin-right: 14px; }
+      #hero .content .check-booking .btn {
+        width: 160px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0;
+        margin-left: 24px; }
 
+/* HOME */
 #rooms {
   padding: 93px 0 150px;
   clear: both;
@@ -68,12 +108,7 @@
   #rooms p {
     line-height: 34.6px;
     letter-spacing: 0.02em; }
-  #rooms .btn {
-    background-color: #E2CF83;
-    text-transform: inherit;
-    width: 227px;
-    height: 55px;
-    line-height: 55px;
+  #rooms .btn-large {
     margin: 60px 0 138px; }
   #rooms .m5.left {
     margin-bottom: 70px; }
@@ -109,12 +144,7 @@
     #restaurants .types img {
       height: 100vh;
       width: 100%; }
-    #restaurants .types .btn {
-      background-color: #E2CF83;
-      text-transform: inherit;
-      width: 227px;
-      height: 55px;
-      line-height: 55px;
+    #restaurants .types .btn-large {
       margin: 60px 0;
       clear: both; }
 
@@ -140,6 +170,70 @@
     margin-top: 45px;
     float: left; }
 
+/* ACCOMODATIONS */
+#intern {
+  padding: 125px 0; }
+  #intern .info .a-light {
+    letter-spacing: -0.02em;
+    line-height: 34.6px;
+    margin-bottom: 120px; }
+  #intern .card {
+    width: 49%; }
+    #intern .card:nth-child(even) {
+      float: right; }
+    #intern .card h2 {
+      margin-top: 15px; }
+    #intern .card .btn-large {
+      margin: 40px auto 30px;
+      float: none;
+      display: block; }
+    #intern .card .extended p {
+      line-height: 34.6px;
+      margin: 30px 0; }
+    #intern .card .extended.no-booking .m4 {
+      width: 37%; }
+      #intern .card .extended.no-booking .m4:last-child {
+        width: 26%;
+        float: right; }
+    #intern .card .extended .check-booking {
+      margin-top: 40px; }
+      #intern .card .extended .check-booking .calendar {
+        width: 157px;
+        height: 45px;
+        line-height: 45px;
+        position: relative; }
+        #intern .card .extended .check-booking .calendar input {
+          border: 1px solid #E6E6E6;
+          padding: 0 14px;
+          width: 120px;
+          cursor: pointer;
+          box-sizing: border-box; }
+        #intern .card .extended .check-booking .calendar .box-calendar {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 38px;
+          height: 45px;
+          border: 1px solid #E6E6E6; }
+          #intern .card .extended .check-booking .calendar .box-calendar .icon-calendar {
+            background-position: 0px -70px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: block;
+            width: 29px;
+            height: 31px;
+            margin: 7px auto; }
+        #intern .card .extended .check-booking .calendar:first-child {
+          margin-right: 14px; }
+      #intern .card .extended .check-booking .btn {
+        width: 160px;
+        height: 42px;
+        line-height: 42px;
+        margin: 25px auto;
+        display: block;
+        padding: 0; }
+
+/*  FOOTER */
 #footer {
   clear: both; }
   #footer .main {
@@ -183,6 +277,8 @@
     #footer .footer-gray .links a {
       color: #959595;
       margin-left: 15px; }
+  #footer a:hover {
+    text-decoration: underline; }
 
 @media screen and (min-width: 1200px) and (max-width: 1679px) {
   #restaurants h2 {

@@ -2498,7 +2498,7 @@ nav ul a span.badge {
   Utility Classes
 *******************/
 .hide {
-  display: none !important; }
+  display: none; }
 
 .left-align {
   text-align: left; }

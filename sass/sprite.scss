@@ -1,7 +1,8 @@
 $twitter: -0px -0px 24px 22px;
 $instagram: -0px -22px 23px 23px;
 $facebook: -0px -45px 16px 25px;
-$arrow-scroll: -0px -70px 47px 47px;
+$calendar: -0px -70px 29px 31px;
+$arrow-scroll: -0px -101px 47px 47px;
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
@@ -35,5 +36,5 @@ $arrow-scroll: -0px -70px 47px 47px;
 }
 
 .icon {
-  background-image: url('../img/sprite.png');
+  background-image: url('../images/sprite.png');
 }

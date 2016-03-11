@@ -7,11 +7,12 @@
 .clearfix:after {
     clear: both;
 }
+
 .clearfix {
     *zoom: 1;
 }
 
-p, h2, ul {
+p, h1, h2, ul {
 	margin: 0
 }
 
@@ -19,6 +20,11 @@ button {
 	&:focus {
 		background: none;
 	}
+}
+
+.btn-large {
+	width: 227px;
+	line-height: 54px;
 }
 
 .center-block {
@@ -29,3 +35,18 @@ button {
 .hamburger {
 	margin: -15px!important
 }
+
+.card {
+	padding: 0;
+	margin-bottom: 60px;
+
+	.card-image {
+		height: 517px;
+
+		img {
+			height: 100%
+		}
+	}
+}
+
+

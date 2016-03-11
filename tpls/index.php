@@ -5,12 +5,12 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	    <title>Inn & Go</title>
 	    <meta name="viewport" content="width=1200, initial-scale=1">
-	    <link rel="stylesheet" href="dist/css/styles.min.css">
+	    <link rel="stylesheet" href="../dist/css/styles.min.css">
 	</head>
 	<body>
 		<div id="hero" class="home">
 			<div class="content">
-				<div class="logo left"><img src="img/inn-go-logo.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza"></div>
+				<a href="javascript:;" class="logo left"><img src="../dist/img/inn-go-logo.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza"></a>
 				<div class="right">
 					<p class="lang left a-light white-text f15"><u>En</u></p>
 					<button class="hamburger hamburger--squeeze right" type="button" aria-label="Menu" aria-controls="navigation">
@@ -32,6 +32,15 @@
 				</div>
 				<div class="row">
 					<div class="check-booking">
+						<div class="left calendar">
+							<input type="date" name="checkin" class="checkin datepicker" value="Check-In"></input>
+							<div class="box-calendar"><span class="icon-calendar icon"></span></div>
+						</div>
+						<div class="left calendar">
+							<input type="date" name="checkout" class="checkout datepicker" value="Check-Out"></input>
+							<div class="box-calendar"><span class="icon-calendar icon"></span></div>
+						</div>
+						<a href="javascript:;" class="btn f16 a-regular white-text left">Check avaliability</a>
 					</div>
 				</div>
 			</div>
@@ -43,7 +52,7 @@
 					<p class="a-light f16">
 						Well-appointed with queen or twin beds our guestrooms fully carpeted, high speed wired internet, international or local direct dial, mini bar, color television with satellite programmes, 24 hours in- room dining, laundry service, safety deposit box.
 					</p>
-					<a href="javascript:;" class="btn f20 a-light">See all rooms</a>
+					<a href="javascript:;" class="btn-large f20 a-light">See all rooms</a>
 				</div>
 				<div class="col m7 right">
 					<img class="responsive-img" src="http://placehold.it/659x539">
@@ -88,7 +97,7 @@
 						<div class="col m12">
 							<h3 class="f60 hd-medium">Arrigang</h3>
 							<p class="f18 a-light col m8">Arirang Restaurant offers traditional Korean cuisine with an exceptional ambiance and unique furnishing.</p>
-							<a href="javascript:;" class="btn f20 a-light left">More details?</a>
+							<a href="javascript:;" class="btn-large f20 a-light left">More details?</a>
 						</div>
 					</div>
 					<div class="col m6 right">
@@ -103,7 +112,7 @@
 						<div class="col m12">
 							<h3 class="f60 hd-medium">Arrigang</h3>
 							<p class="f18 a-light col m8">Arirang Restaurant offers traditional Korean cuisine with an exceptional ambiance and unique furnishing.</p>
-							<a href="javascript:;" class="btn f20 a-light left">More details?</a>
+							<a href="javascript:;" class="btn-large f20 a-light left">More details?</a>
 						</div>
 					</div>
 				</div>
@@ -147,6 +156,6 @@
 			</div>
 		</div>
 		<?php include_once('includes/footer.php'); ?>
-		<script src="dist/js/scripts.min.js"></script>
+		<script src="../dist/js/scripts.min.js"></script>
 	</body>
 </html>
