@@ -1,3 +1,5 @@
+@import 'sprite';
+
 $colorBtn :  #E2CF83;
 
 #hero {
@@ -33,9 +35,7 @@ $colorBtn :  #E2CF83;
 			margin-left: -78px!important;
 
 			.arrow-scroll {
-				background-image: url(../img/arrow-scroll.png);
-				width: 39px;
-				height: 39px;
+				@include sprite($arrow-scroll);
 				position: absolute;
 				top: 30px;
 				left: 50%;
@@ -196,6 +196,56 @@ $colorBtn :  #E2CF83;
 		border-bottom: 1px solid #F495AC;
 		margin-top: 45px;
 		float: left;
+	}
+}
+
+#footer {
+	clear: both;
+
+	.main {
+		padding: 75px 0;
+
+		.logo {
+			margin: 0 20px 65px;
+			display: block;
+			width: 206px;
+		}
+
+		p, a {
+			line-height: 40.6px;
+			color: #555;
+		}
+
+		ul {
+			margin-right: 35px
+		}
+	}
+
+	.footer-gray {
+		background-color: #F4F3F3;
+		padding: 28px 0;
+
+		.networks {
+			a {
+				float: left;
+				margin-left: 34px;
+			}
+			.instagram {
+				@include sprite($instagram);
+			}
+			.facebook {
+				@include sprite($facebook);
+			}
+			.twitter {
+				@include sprite($twitter);
+			}
+		}
+		.links {
+			a {
+				color: #959595;
+				margin-left: 15px
+			}
+		}
 	}
 }
 

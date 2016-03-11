@@ -4,7 +4,7 @@
 	    <meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	    <title>Inn & Go</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="width=1200, initial-scale=1">
 	    <link rel="stylesheet" href="dist/css/styles.min.css">
 	</head>
 	<body>
@@ -27,7 +27,7 @@
 				<div class="row">
 					<div class="center-block box-scroll">
 						<p class="f20 white-text center-align a-lightitalic">Scroll to discover</p>
-						<a href="javascript:;" class="arrow-scroll bounce"></a>
+						<a href="javascript:;" class="arrow-scroll bounce icon"></a>
 					</div>
 				</div>
 				<div class="row">
@@ -92,12 +92,12 @@
 						</div>
 					</div>
 					<div class="col m6 right">
-						<img class="responsive-img right" src="http://placehold.it/720x949">
+						<img class="responsive-img right" src="http://placehold.it/959x930">
 					</div>
 				</div>
 				<div class="clearfix">
 					<div class="col m6 left">
-						<img class="responsive-img left" src="http://placehold.it/720x949">
+						<img class="responsive-img left" src="http://placehold.it/959x930">
 					</div>
 					<div class="col right m5 offset-m1">
 						<div class="col m12">
@@ -146,6 +146,7 @@
 				</div>
 			</div>
 		</div>
+		<?php include_once('includes/footer.php'); ?>
 		<script src="dist/js/scripts.min.js"></script>
 	</body>
 </html>

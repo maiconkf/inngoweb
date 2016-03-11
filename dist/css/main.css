@@ -1,3 +1,6 @@
+.icon {
+  background-image: url("../img/sprite.png"); }
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -22,9 +25,12 @@
       height: 80px;
       margin-left: -78px !important; }
       #hero .content .box-scroll .arrow-scroll {
-        background-image: url(../img/arrow-scroll.png);
-        width: 39px;
-        height: 39px;
+        background-position: 0px -70px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: block;
+        width: 47px;
+        height: 47px;
         position: absolute;
         top: 30px;
         left: 50%;
@@ -133,6 +139,50 @@
     border-bottom: 1px solid #F495AC;
     margin-top: 45px;
     float: left; }
+
+#footer {
+  clear: both; }
+  #footer .main {
+    padding: 75px 0; }
+    #footer .main .logo {
+      margin: 0 20px 65px;
+      display: block;
+      width: 206px; }
+    #footer .main p, #footer .main a {
+      line-height: 40.6px;
+      color: #555; }
+    #footer .main ul {
+      margin-right: 35px; }
+  #footer .footer-gray {
+    background-color: #F4F3F3;
+    padding: 28px 0; }
+    #footer .footer-gray .networks a {
+      float: left;
+      margin-left: 34px; }
+    #footer .footer-gray .networks .instagram {
+      background-position: 0px -22px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 23px;
+      height: 23px; }
+    #footer .footer-gray .networks .facebook {
+      background-position: 0px -45px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 16px;
+      height: 25px; }
+    #footer .footer-gray .networks .twitter {
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 24px;
+      height: 22px; }
+    #footer .footer-gray .links a {
+      color: #959595;
+      margin-left: 15px; }
 
 @media screen and (min-width: 1200px) and (max-width: 1679px) {
   #restaurants h2 {

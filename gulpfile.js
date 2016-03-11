@@ -5,7 +5,9 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-cssmin'),
 	stripCssComments = require('gulp-strip-css-comments'),
 	imagemin = require('gulp-imagemin'),
-	pngquant = require('imagemin-pngquant');
+	pngquant = require('imagemin-pngquant'),
+    gulpif = require('gulp-if'),
+    sprity = require('sprity');
 
 
 var scss = ['./sass/**/*.scss'],
@@ -34,9 +36,20 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./dist/js/'));
 });
 
+gulp.task('sprites', function () {
+  return sprity.src({
+    src: './dist/img/sprite/**/*.{png,jpg}',
+    style: 'sprite.scss',
+    processor: 'sass',
+    'style-type': 'scss'
+  })
+  .pipe(gulpif('*.png', gulp.dest('./dist/img/'), gulp.dest('./sass/')))
+});
+
 gulp.task('default',function() {
     gulp.watch(scss, ['scss']);
     gulp.watch(css, ['styles']);
     gulp.watch(js, ['scripts']);
-    gulp.src('./img/*').pipe(imagemin({progressive: true, use: [pngquant()]})).pipe(gulp.dest('./dist/img/'));
+    gulp.watch('./dist/img/sprite/**/*.{png,jpg}', ['sprites']);
+    gulp.src('./img/**/*').pipe(imagemin({progressive: true, use: [pngquant()]})).pipe(gulp.dest('./dist/img/'));
 });

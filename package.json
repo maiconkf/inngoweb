@@ -4,11 +4,14 @@
   "description": "hotel",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-install": "^0.6.0"
+    "gulp-install": "^0.6.0",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4"
   },
   "devDependencies": {
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "^0.1.7",
+    "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^2.2.0",
