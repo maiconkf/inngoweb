@@ -233,6 +233,72 @@
         display: block;
         padding: 0; }
 
+/* PRIVACY POLICE */
+#layout-two #menu {
+  height: 111px;
+  border-bottom: 2px solid #ececec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 33px 0; }
+  #layout-two #menu .check-booking .calendar {
+    width: 157px;
+    height: 45px;
+    line-height: 45px;
+    position: relative; }
+    #layout-two #menu .check-booking .calendar input {
+      border: 1px solid #E6E6E6;
+      padding: 0 14px;
+      width: 120px;
+      cursor: pointer;
+      box-sizing: border-box; }
+    #layout-two #menu .check-booking .calendar .box-calendar {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 38px;
+      height: 45px;
+      border: 1px solid #E6E6E6; }
+      #layout-two #menu .check-booking .calendar .box-calendar .icon-calendar {
+        background-position: 0px -70px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: block;
+        width: 29px;
+        height: 31px;
+        margin: 7px auto; }
+    #layout-two #menu .check-booking .calendar:first-child {
+      margin-right: 14px; }
+  #layout-two #menu .check-booking .btn {
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 20px;
+    display: block;
+    padding: 0; }
+  #layout-two #menu .hamburger {
+    margin-top: -3px !important; }
+
+#layout-two h1 {
+  margin: 65px auto 10px; }
+
+#layout-two .text p {
+  font-size: 18px;
+  line-height: 37.6px;
+  font-family: 'alright_sanslight';
+  margin-top: 50px; }
+
+#layout-two .text h2 {
+  margin: 115px 0 -33px; }
+
+#layout-two #footer .main {
+  background-color: #f2f1f1; }
+
+#layout-two #footer .footer-gray {
+  background-color: #fff; }
+
 /*  FOOTER */
 #footer {
   clear: both; }
@@ -291,9 +357,13 @@
   #more .box-experiences {
     margin-left: 0;
     width: 100%; }
+  #intern .info .m3 {
+    width: 40%; }
   .f58 {
     font-size: 41px; }
   .f60 {
     font-size: 46px; }
+  .f192 {
+    font-size: 132px; }
   .f200 {
     font-size: 140px; } }

@@ -29,7 +29,3 @@ button:focus {
 .card {
   padding: 0;
   margin-bottom: 60px; }
-  .card .card-image {
-    height: 517px; }
-    .card .card-image img {
-      height: 100%; }
