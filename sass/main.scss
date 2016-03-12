@@ -420,6 +420,35 @@ $lineHeight : 34.6px;
 	}
 }
 
+/* ABOUT US */
+.our-story {
+	margin-bottom: 180px;
+
+	p {
+		color: #434343;
+		line-height: 41.6px;
+		margin-top: 10px
+	}
+}
+
+.content-about {
+	h2 {
+		margin: 125px auto 50px;
+	}
+
+	.col.m12 {
+		width: 98%;
+
+		p {
+			margin-bottom: 45px;
+			font-size: 18px;
+			line-height: $lineHeight;
+			color: #434343;
+			font-family: 'alright_sanslight';
+		}
+	}
+}
+
 /*  FOOTER */
 #footer {
 	clear: both;
