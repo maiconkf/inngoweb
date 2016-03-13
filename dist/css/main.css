@@ -96,6 +96,26 @@
         padding: 0;
         margin-left: 24px; }
 
+#modal {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100; }
+  #modal .fundo {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.9); }
+  #modal .close-icon {
+    position: absolute;
+    top: 48px;
+    right: 15%; }
+  #modal .hamburger-inner, #modal .hamburger-inner::after, #modal .hamburger-inner::before {
+    background-color: #fff; }
+
 /* HOME */
 #rooms {
   padding: 93px 0 150px;
