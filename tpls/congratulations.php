@@ -9,7 +9,7 @@
 	    <link rel="stylesheet" href="../dist/css/styles.min.css">
 	</head>
 	<body id="layout-two" class="no-booking">
-		<?php include_once('includes/menu.php'); ?>
+		<?php include_once('includes/header.php'); ?>
 		<div id="intern" class="clearfix">
 			<div class="congratulations container clearfix">
 				<h1 class="f145 hd-medium center-align">Congratulations</h1>

@@ -427,6 +427,17 @@
     display: block;
     padding: 0 18px; }
 
+/* LANDING - ARTICLE */
+#intern-landing {
+  padding: 44px 0 125px; }
+  #intern-landing .header-landing {
+    height: 85px;
+    line-height: 85px; }
+    #intern-landing .header-landing .right:hover {
+      opacity: .85; }
+  #intern-landing .text p {
+    font-family: 'AvenirLTPro-Light'; }
+
 /*  FOOTER */
 #footer {
   clear: both; }

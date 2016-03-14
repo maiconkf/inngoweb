@@ -3,6 +3,7 @@ var app = {};
 app.init = function init() {
 	app.openMenu();
 	app.datePicker();
+	app.scrollPage();
 	app.viewMore();
 };
 
@@ -49,6 +50,17 @@ app.datePicker = function() {
 		format: 'dd mmm, yyyy',
 	    selectMonths: true,
 	    selectYears: 15
+	});
+};
+
+app.scrollPage = function() {
+	var winHeight = $(window).height()+70,
+		body = $('html, body');
+
+	$('.arrow-scroll').off().on({
+		'click' : function() {
+			body.stop().animate({scrollTop: winHeight}, '300', 'swing');
+		}
 	});
 };
 

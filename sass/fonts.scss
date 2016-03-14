@@ -54,6 +54,38 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'AvenirLTPro-Roman';
+  src: url('../font/AvenirLTPro-Roman.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTPro-Roman.otf')  format('opentype'),
+         url('../font/AvenirLTPro-Roman.woff') format('woff'), url('../font/AvenirLTPro-Roman.ttf')  format('truetype'), url('../font/AvenirLTPro-Roman.svg#AvenirLTPro-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-Light';
+  src: url('../font/AvenirLTPro-Light.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTPro-Light.otf')  format('opentype'),
+         url('../font/AvenirLTPro-Light.woff') format('woff'), url('../font/AvenirLTPro-Light.ttf')  format('truetype'), url('../font/AvenirLTPro-Light.svg#AvenirLTPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-Book';
+  src: url('../font/AvenirLTPro-Book.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTPro-Book.otf')  format('opentype'),
+         url('../font/AvenirLTPro-Book.woff') format('woff'), url('../font/AvenirLTPro-Book.ttf')  format('truetype'), url('../font/AvenirLTPro-Book.svg#AvenirLTPro-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dark-golden {
+    color: #d7bc53
+}
+
+.golden {
+    color: #d4ba52!important
+}
+
 .a-regular {
     font-family: 'alright_sansregular';
 }
@@ -72,6 +104,18 @@
 
 .hd-light {
     font-family: 'harriet_displaylight';
+}
+
+.av-roman {
+    font-family: 'AvenirLTPro-Roman';
+}
+
+.av-light {
+    font-family: 'AvenirLTPro-Light';
+}
+
+.av-book {
+    font-family: 'AvenirLTPro-Book';
 }
 
 .f15 {

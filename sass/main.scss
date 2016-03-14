@@ -606,6 +606,28 @@ $lineHeight : 34.6px;
 	}
 }
 
+/* LANDING - ARTICLE */
+#intern-landing {
+	padding: 44px 0 125px;
+
+	.header-landing {
+		height: 85px;
+		line-height: 85px;
+
+		.right {
+			&:hover {
+				opacity: .85;
+			}
+		}
+	}
+
+	.text {
+		p {
+			font-family: 'AvenirLTPro-Light';
+		}
+	}
+}
+
 /*  FOOTER */
 #footer {
 	clear: both;

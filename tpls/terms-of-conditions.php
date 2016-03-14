@@ -8,7 +8,7 @@
 	    <link rel="stylesheet" href="../dist/css/styles.min.css">
 	</head>
 	<body id="layout-two">
-		<?php include_once('includes/menu.php'); ?>
+		<?php include_once('includes/header.php'); ?>
 		<div id="intern" class="clearfix">
 			<div class="container">
 				<div class="col m7 center-block">
