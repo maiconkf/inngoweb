@@ -41,7 +41,8 @@ gulp.task('sprites', function () {
     src: './dist/img/sprite/**/*.{png,jpg}',
     style: 'sprite.scss',
     processor: 'sass',
-    'style-type': 'scss'
+    'style-type': 'scss',
+    cssPath : '../img/'
   })
   .pipe(gulpif('*.png', gulp.dest('./dist/img/'), gulp.dest('./sass/')))
 });
