@@ -11,21 +11,37 @@ app.openMenu = function() {
 	$('.hamburger').off().on({
 		'click' : function() {
 			var $this = $(this),
-				$modal = $('#modal');
+				$modal = $('#modal'),
+				posOffset = $('.open-modal').position(),
+				top;
+
+			if($('body').find('#menu').length > 0) {
+				top = '45px';
+			} else {
+				top = posOffset.top;
+			}
 
 			if(c % 2 == 0) {
 				$this.addClass('is-active');
-				$modal.show().animate({'top' : '0'}, 'fast', 'linear');
+				$modal.show().animate({'top' : '0'}, 'fast', 'linear').find('.hamburger').css({'left' : posOffset.left, 'top' : top});
 			} else {
 				$('.hamburger').removeClass('is-active');
 				$modal.animate({'top' : '100vh'}, 'fast', 'linear', function() {
 					$modal.hide().find('.hamburger').addClass('is-active');
 				});
 			}
+
 			c++;
 
+			$(window).resize(function() {
+				var $menu = $('.open-modal'),
+					posOffset = $menu.position();
+
+				$modal.find('.hamburger').css('left', posOffset.left);
+			});
 		}
 	});
+
 };
 
 app.datePicker = function() {

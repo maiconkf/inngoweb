@@ -1,11 +1,15 @@
 @import 'sprite';
 
-$colorBtn :  #E2CF83;
+$colorBtn : #E2CF83;
 $lineHeight : 34.6px;
 
 .btn, .btn-large {
 	background-color: $colorBtn;
 	text-transform: inherit;
+
+	&:hover {
+		background-color: #E5CC40;
+	}
 }
 
 /* MENU */
@@ -125,19 +129,76 @@ $lineHeight : 34.6px;
 	.fundo {
 		width: 100%;
 		height: 100%;
-		z-index: 100;
+		z-index: 101;
 		opacity: 0.9;
 		background-color: rgba(0, 0, 0, 0.9);
 	}
 
-	.close-icon {
+	.hamburger {
 		position: absolute;
-		top: 48px;
-		right: 15%
+		top: 45px;
+		z-index: 102;
+
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+			background-color: #fff
+		}
 	}
 
-	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
-		background-color: #fff
+	.text-left {
+		position: absolute;
+		left: 30%;
+		top: 17%;
+		z-index: 102;
+	}
+
+	.text-right {
+		position: absolute;
+		right: 30%;
+		top: 17%;
+		z-index: 102;
+	}
+
+	.text-left, .text-right {
+		a {
+			display: block;
+
+			&.active, &:hover {
+				text-decoration: line-through
+			}
+		}
+
+	}
+
+	.newsletter {
+		margin-top: 20px;
+		width: 110%;
+
+		p {
+			margin-bottom: 5px;
+			line-height: $lineHeight;
+		}
+
+		::-webkit-input-placeholder {
+			font-style: italic;
+		}
+		:-moz-placeholder {
+			font-style: italic;
+		}
+		::-moz-placeholder {
+			font-style: italic;
+		}
+		:-ms-input-placeholder {
+			font-style: italic;
+		}
+	}
+	.lang {
+		position: absolute;
+		left: 17%;
+		bottom: 12%;
+
+		a {
+			margin-right: 7px
+		}
 	}
 }
 

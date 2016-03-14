@@ -17,7 +17,7 @@
 			<a href="javascript:;" class="btn f16 a-regular white-text left">Check avaliability</a>
 		</div>
 		<div class="col m2 right">
-			<button class="hamburger hamburger--squeeze right" type="button" aria-label="Menu" aria-controls="navigation">
+			<button class="hamburger hamburger--squeeze right open-modal" type="button" aria-label="Menu" aria-controls="navigation">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>

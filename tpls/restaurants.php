@@ -13,7 +13,7 @@
 				<a href="javascript:;" class="logo left"><img src="../dist/img/inn-go-logo.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza"></a>
 				<div class="right">
 					<p class="lang left a-light white-text f15"><u>En</u></p>
-					<button class="hamburger hamburger--squeeze right" type="button" aria-label="Menu" aria-controls="navigation">
+					<button class="hamburger hamburger--squeeze open-modal right" type="button" aria-label="Menu" aria-controls="navigation">
 						<span class="hamburger-box">
 							<span class="hamburger-inner"></span>
 						</span>
@@ -164,6 +164,44 @@
 			</div>
 		</div>
 		<?php include_once('includes/footer.php'); ?>
+		<div id="modal" class="hide">
+			<div class="fundo close"></div>
+			<div class="container">
+				<div class="col m2 right close-icon">
+					<button class="hamburger hamburger--squeeze is-active right close" type="button" aria-label="Menu" aria-controls="navigation">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+				<div class="text-left col m2">
+					<a href="./" class="hd-medium f44 white-text">Home</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">About Us</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Accomodations</a>
+					<a href="javascript:;" class="hd-medium f44 white-text active">Restaurants</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Facilities</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Services</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Contact Us</a>
+				</div>
+				<div class="text-right col m2">
+					<a href="javascript:;" class="hd-medium f44 white-text">Experiences</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Events</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">Media</a>
+					<div class="newsletter">
+						<p class="white-text f18 a-light">If you want to stay up to date with the Hotel, receive updates, news and find our about promotions, exclusive offers and other benefits, sign up for our email newsletter below:</p>
+						<div class="row clearfix">
+							<div class="input-field col s12">
+								<input id="email" type="email" placeholder="Enter your email address" class="white-text a-light">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lang">
+					<a href="javascript:;" class="f18 a-light white-text left"><u>En</u></a>
+					<a href="javascript:;" class="f18 a-light white-text left">Ar</a>
+				</div>
+			</div>
+		</div>
 		<script src="../dist/js/scripts.min.js"></script>
 	</body>
 </html>
