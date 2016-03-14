@@ -438,6 +438,24 @@
   #intern-landing .text p {
     font-family: 'AvenirLTPro-Light'; }
 
+/* BOOKING */
+#booking {
+  padding: 120px 0 300px; }
+  #booking li {
+    margin-left: 57px;
+    opacity: .38;
+    filter: alpha(opacity=38); }
+    #booking li.active {
+      opacity: 1;
+      filter: alpha(opacity=100); }
+    #booking li:first-child {
+      margin-left: 0; }
+  #booking .f340 i:after {
+    content: '3.';
+    position: absolute;
+    opacity: 0.12;
+    filter: alpha(opacity=12); }
+
 /*  FOOTER */
 #footer {
   clear: both; }

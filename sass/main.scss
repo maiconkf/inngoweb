@@ -628,6 +628,36 @@ $lineHeight : 34.6px;
 	}
 }
 
+/* BOOKING */
+#booking {
+	padding: 120px 0 300px;
+
+	li {
+		margin-left: 57px;
+		opacity: .38;
+		filter: alpha(opacity=38);
+
+		&.active {
+			opacity: 1;
+			filter: alpha(opacity=100);
+
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	.f340 {
+		i:after {
+			content: '3.';
+			position: absolute;
+			opacity: 0.12;
+			filter: alpha(opacity=12);
+		}
+	}
+}
+
 /*  FOOTER */
 #footer {
 	clear: both;
