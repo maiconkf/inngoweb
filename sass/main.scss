@@ -166,7 +166,6 @@ $lineHeight : 34.6px;
 				text-decoration: line-through
 			}
 		}
-
 	}
 
 	.newsletter {
@@ -430,6 +429,7 @@ $lineHeight : 34.6px;
 		width: 100%;
 		background-color: #fff;
 		padding: 33px 0;
+		z-index: 10;
 
 		.check-booking {
 			.calendar {
@@ -490,6 +490,7 @@ $lineHeight : 34.6px;
 			line-height: 37.6px;
 			font-family: 'alright_sanslight';
 			margin-top: 50px;
+			color: #434343;
 		}
 
 		h2 {
@@ -560,6 +561,48 @@ $lineHeight : 34.6px;
 		height: 48px;
 		line-height: 48px;
 		display: block;
+	}
+}
+
+/* ARTICLE */
+#layout-two .article {
+	margin: 160px auto;
+}
+
+.published {
+	color: #f495ac;
+	margin-top: 60px;
+}
+
+.shares {
+	margin: 60px 0 174px;
+
+	.left {
+		margin-left: 10px;
+	}
+}
+
+.border {
+	border-bottom: solid 1px #eaeaea;
+	clear: both;
+}
+
+.text-italic {
+	margin-bottom: 75px;
+
+	p {
+		font-style: italic;
+		line-height: $lineHeight;
+		color: #434343;
+		margin: 85px auto 45px;
+	}
+
+	.btn {
+		width: 210px;
+		height: 55px;
+		line-height: 55px;
+		display: block;
+		padding: 0 18px;
 	}
 }
 

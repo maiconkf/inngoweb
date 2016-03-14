@@ -46,4 +46,14 @@ button {
 	margin-bottom: 60px;
 }
 
+.picker__date-display, .picker--focused .picker__day--selected, .picker__day--selected, .picker__day--selected:hover {
+	background-color: #E2CF83;
+}
 
+.picker__weekday-display {
+	background-color: #E5CC40;
+}
+
+.picker__close, .picker__today, .picker__day.picker__day--today {
+	color: #E5CC40;
+}
