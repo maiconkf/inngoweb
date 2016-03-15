@@ -62,6 +62,7 @@
 				</div>
 			</div>
 		</div>
+		<?php include_once('includes/footer.php'); ?>
 		<script src="../dist/js/scripts.min.js"></script>
 	</body>
 </html>
