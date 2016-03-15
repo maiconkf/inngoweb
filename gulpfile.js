@@ -11,8 +11,20 @@ var gulp = require('gulp'),
 
 
 var scss = ['./sass/**/*.scss'],
-	css  = ['./dist/css/materialize.css', './dist/css/reset.css', './dist/css/fonts.css', './dist/css/main.css', './dist/css/hamburger.css'],
-	js	 = ['./js/vendor/jquery.min.js', './js/vendor/picker.js', './js/vendor/picker.date.js', './js/main.js'];
+	css  = ['./dist/css/materialize.css',
+            './dist/css/reset.css',
+            './dist/css/fonts.css',
+            './dist/css/main.css',
+            './dist/css/hamburger.css'],
+	js	 = ['./js/vendor/jquery.min.js',
+            './js/vendor/jquery.easing.1.3.js',
+            './js/vendor/global.js',
+            './js/vendor/animation.js',
+            './js/vendor/dropdown.js',
+            './js/vendor/picker.js',
+            './js/vendor/picker.date.js',
+            './js/vendor/forms.js',
+            './js/main.js'];
 
 
 gulp.task('scss', function() {

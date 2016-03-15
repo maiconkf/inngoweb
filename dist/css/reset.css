@@ -42,3 +42,6 @@ button:focus {
 
 .picker__close, .picker__today, .picker__day.picker__day--today {
   color: #E5CC40; }
+
+.input-field label {
+  top: 2rem; }

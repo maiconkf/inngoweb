@@ -1,4 +1,4 @@
-.icon {
+.icon, .events .quotes .box .caret {
   background-image: url("../img/sprite.png"); }
 
 .btn, .btn-large {
@@ -6,6 +6,11 @@
   text-transform: inherit; }
   .btn:hover, .btn-large:hover {
     background-color: #E5CC40; }
+
+.shadow, .box-reservation, #contact-map .box-address, .events .quotes .box {
+  -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5); }
 
 /* MENU */
 #hero {
@@ -33,7 +38,7 @@
       height: 80px;
       margin-left: -78px !important; }
       #hero .content .box-scroll .arrow-scroll {
-        background-position: 0px -199px;
+        background-position: 0px -221px;
         background-repeat: no-repeat;
         overflow: hidden;
         display: block;
@@ -82,7 +87,7 @@
           height: 45px;
           border: 1px solid #E6E6E6; }
           #hero .content .check-booking .calendar .box-calendar .icon-calendar {
-            background-position: 0px -99px;
+            background-position: 0px -121px;
             background-repeat: no-repeat;
             overflow: hidden;
             display: block;
@@ -272,7 +277,7 @@
           height: 45px;
           border: 1px solid #E6E6E6; }
           #intern .card .extended .check-booking .calendar .box-calendar .icon-calendar {
-            background-position: 0px -99px;
+            background-position: 0px -121px;
             background-repeat: no-repeat;
             overflow: hidden;
             display: block;
@@ -319,7 +324,7 @@
       height: 45px;
       border: 1px solid #E6E6E6; }
       #layout-two #menu .check-booking .calendar .box-calendar .icon-calendar {
-        background-position: 0px -99px;
+        background-position: 0px -121px;
         background-repeat: no-repeat;
         overflow: hidden;
         display: block;
@@ -467,10 +472,7 @@
 .box-reservation {
   margin: -80px auto 260px !important;
   padding: 100px 0;
-  background-color: #f4f3f3;
-  -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5); }
+  background-color: #f4f3f3; }
   .box-reservation h1, .box-reservation p {
     color: #555; }
   .box-reservation h1 {
@@ -499,10 +501,7 @@
     position: absolute;
     top: 140px;
     left: 0;
-    padding: 135px 0 115px;
-    -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.5); }
+    padding: 135px 0 115px; }
     #contact-map .box-address .city {
       line-height: 1.1;
       margin-bottom: 90px; }
@@ -516,21 +515,21 @@
       #contact-map .box-address .social-media a {
         margin: 0 26px 0 16px; }
         #contact-map .box-address .social-media a.facebook {
-          background-position: 0px -163px;
+          background-position: 0px -185px;
           background-repeat: no-repeat;
           overflow: hidden;
           display: block;
           width: 22px;
           height: 36px; }
         #contact-map .box-address .social-media a.twitter {
-          background-position: 0px -70px;
+          background-position: 0px -92px;
           background-repeat: no-repeat;
           overflow: hidden;
           display: block;
           width: 33px;
           height: 29px; }
         #contact-map .box-address .social-media a.instagram {
-          background-position: 0px -130px;
+          background-position: 0px -152px;
           background-repeat: no-repeat;
           overflow: hidden;
           display: block;
@@ -569,6 +568,81 @@
         margin-top: 65px;
         clear: both; }
 
+/* EVENTS */
+.events .text-events .f22 {
+  line-height: 41.6px;
+  margin-top: 20px; }
+
+.events .full-image {
+  margin: 180px auto 130px; }
+
+.events .text p {
+  margin-top: 45px;
+  line-height: 34.6px;
+  color: #434343; }
+
+.events .our-events {
+  margin: 190px auto 100px; }
+  .events .our-events h2 {
+    margin: 45px 0 10px; }
+  .events .our-events p {
+    line-height: 34.6px;
+    color: #434343; }
+  .events .our-events .btn {
+    height: 55px;
+    line-height: 55px;
+    background-color: #ddc979;
+    margin: 60px 0 265px; }
+  .events .our-events .last {
+    margin-top: 130px; }
+
+.events .quotes {
+  clear: both; }
+  .events .quotes .box {
+    padding: 110px 0 85px;
+    background-color: #f7f7f7;
+    margin-bottom: 250px; }
+    .events .quotes .box input {
+      border: 1px solid #eee;
+      background-color: #fff;
+      padding: 0 36px;
+      height: 90px;
+      line-height: 90px;
+      font-size: 22px;
+      font-family: 'alright_sanslight';
+      box-sizing: border-box; }
+    .events .quotes .box input, .events .quotes .box li span {
+      color: #979797; }
+    .events .quotes .box .caret {
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 32px;
+      height: 22px;
+      z-index: 100;
+      top: 37px;
+      right: 36px; }
+    .events .quotes .box .f19 {
+      color: #979797;
+      opacity: .75;
+      margin-bottom: 10px; }
+    .events .quotes .box .box-date {
+      position: relative;
+      margin-right: 16px;
+      padding: 0; }
+      .events .quotes .box .box-date .caret {
+        position: absolute; }
+    .events .quotes .box .btn-large {
+      margin: 80px auto 0 !important;
+      display: block;
+      clear: both;
+      background-color: #ddc979;
+      border: 0;
+      padding: inherit; }
+  .events .quotes .valign-wrapper {
+    height: 1363px; }
+
 /*  FOOTER */
 #footer {
   clear: both; }
@@ -590,21 +664,21 @@
       float: left;
       margin-left: 34px; }
     #footer .footer-gray .networks .instagram {
-      background-position: 0px -22px;
+      background-position: 0px -44px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
       width: 23px;
       height: 23px; }
     #footer .footer-gray .networks .facebook {
-      background-position: 0px -45px;
+      background-position: 0px -67px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
       width: 16px;
       height: 25px; }
     #footer .footer-gray .networks .twitter {
-      background-position: 0px 0px;
+      background-position: 0px -22px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
@@ -686,6 +760,12 @@
     width: 67% !important; }
   .get-touch #contact {
     width: 60% !important; }
+  .events .info {
+    width: 67%; }
+  .events .our-events .btn {
+    margin-bottom: 130px; }
+  .events .quotes .m8 {
+    width: 90%; }
   .f58 {
     font-size: 41px; }
   .f60 {
@@ -694,6 +774,8 @@
     font-size: 114px; }
   .f145 {
     font-size: 100px; }
+  .f180 {
+    font-size: 140px; }
   .f192 {
     font-size: 132px; }
   .f200 {

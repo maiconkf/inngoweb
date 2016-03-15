@@ -324,7 +324,7 @@
         if (type === 'multiple') {
           options.append($('<li class="' + disabledClass + '"><span><input type="checkbox"' + disabledClass + '/><label></label>' + option.html() + '</span></li>'));
         } else {
-          options.append($('<li class="' + disabledClass + '"><span>' + option.html() + '</span></li>'));
+          options.append($('<li class="' + disabledClass + '"><span class="f16 a-light">' + option.html() + '</span></li>'));
         }
       };
 
@@ -381,14 +381,14 @@
       // Wrap Elements
       $select.wrap(wrapper);
       // Add Select Display Element
-      var dropdownIcon = $('<span class="caret">&#9660;</span>');
+      var dropdownIcon = $('<span class="caret"></span>');
       if ($select.is(':disabled'))
         dropdownIcon.addClass('disabled');
 
       // escape double quotes
       var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
 
-      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
+      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'" required/>');
       $select.before($newSelect);
       $newSelect.before(dropdownIcon);
 

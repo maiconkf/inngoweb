@@ -77,9 +77,18 @@
 					<p class="f22 a-light center-align">Inn and Go Plaza Kuwait is a mere 20 minutes from the airport and in the vicinity of The Grand Mosque of Kuwait, Kuwait Tower, Liberation Tower, and the Scientific Museum. Here for work? Enjoy high-speed internet access, meeting facilities and a ballroom for functions that can hold up to 250 guests.</p>
 				</div>
 				<form id="contact" class="col m6 center-block clearfix" method="post">
-					<input placeholder="Your Name" id="name" name="name" type="text" class="validate a-light f22">
-					<input placeholder="Your Email" id="email" name="email" type="email" class="validate a-light f22">
-					<textarea placeholder="Your message. How can we help you?" id="message" name="message" class="validate a-light f22"></textarea>
+					<div class="input-field">
+						<input placeholder="Your Name" id="name" name="name" type="text" class="validate a-light f22" required>
+						<label for="name" data-error="wrong"></label>
+					</div>
+					<div class="input-field">
+						<input placeholder="Your Email" id="email" name="email" type="email" class="validate a-light f22" required>
+						<label for="email" data-error="wrong"></label>
+					</div>
+					<div class="input-field">
+						<textarea placeholder="Your message. How can we help you?" id="message" name="message" class="validate a-light f22" required></textarea>
+						<label for="message" data-error="wrong"></label>
+					</div>
 					<input type="submit" value="Send" class="f22 a-regular btn">
 				</form>
 			</div>
@@ -97,12 +106,12 @@
 				</div>
 				<div class="text-left col m2">
 					<a href="./" class="hd-medium f44 white-text">Home</a>
-					<a href="javascript:;" class="hd-medium f44 white-text active">About Us</a>
+					<a href="javascript:;" class="hd-medium f44 white-text">About Us</a>
 					<a href="javascript:;" class="hd-medium f44 white-text">Accomodations</a>
 					<a href="javascript:;" class="hd-medium f44 white-text">Restaurants</a>
 					<a href="javascript:;" class="hd-medium f44 white-text">Facilities</a>
 					<a href="javascript:;" class="hd-medium f44 white-text">Services</a>
-					<a href="javascript:;" class="hd-medium f44 white-text">Contact Us</a>
+					<a href="javascript:;" class="hd-medium f44 white-text active">Contact Us</a>
 				</div>
 				<div class="text-right col m2">
 					<a href="javascript:;" class="hd-medium f44 white-text">Experiences</a>
