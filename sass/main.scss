@@ -630,7 +630,7 @@ $lineHeight : 34.6px;
 
 /* BOOKING */
 #booking {
-	padding: 120px 0 300px;
+	padding: 231px 0 300px;
 
 	li {
 		margin-left: 57px;
@@ -648,13 +648,64 @@ $lineHeight : 34.6px;
 		}
 	}
 
-	.f340 {
-		i:after {
-			content: '3.';
-			position: absolute;
-			opacity: 0.12;
-			filter: alpha(opacity=12);
+	.container {
+		position: relative;
+
+		.f124 {
+			margin: 212px 0 0 190px;
+
+			i:after {
+				content: '3.';
+				position: absolute;
+				top: 150px;
+				left: 50px;
+				opacity: 0.12;
+				filter: alpha(opacity=12);
+				line-height: 1;
+				font-size: 340px;
+			}
 		}
+	}
+}
+
+.box-reservation {
+	margin: -80px auto 260px!important;
+	padding: 100px 0;
+	background-color: #f4f3f3;
+	-webkit-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+
+	h1, p {
+		color: #555;
+	}
+
+	h1 {
+		margin: 0 auto;
+		line-height: 1.1;
+	}
+
+	.text {
+		margin: 65px auto 95px;
+
+		p {
+			line-height: 41.6px;
+		}
+	}
+
+	.f20.black-text {
+		&:nth-child(even) {
+			margin-bottom: 45px;
+		}
+	}
+
+	.btn {
+		width: 182px;
+		height: 48px;
+		line-height: 48px;
+		display: block;
+		padding: 0 47px;
+		margin: 100px auto 0
 	}
 }
 
@@ -714,6 +765,25 @@ $lineHeight : 34.6px;
 	}
 }
 
+@media screen and (min-width: 1680px) {
+	#booking {
+		.container {
+			width: 678px;
+		}
+		.m7 {
+			width: 678px;
+
+			li {
+				margin-left: 34px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1679px) {
 	#restaurants {
 		h2 {
@@ -759,6 +829,57 @@ $lineHeight : 34.6px;
 			height: 48px;
 			line-height: 48px;
 			display: block;
+		}
+
+		.m6 {
+			width: 60%
+		}
+	}
+
+	.text-left, .text-right {
+		width: 28%!important;
+	}
+
+	.text-left {
+		left: 20%!important;
+	}
+
+	.text-right {
+		right: 20%!important;
+	}
+
+	.lang {
+		bottom: 5%!important;
+	}
+
+	#booking {
+		padding: 180px 0 300px;
+
+		.container {
+			width: 563px;
+		}
+
+		.m7 {
+			width: 563px;
+
+			li {
+				margin-left: 25px;
+				font-size: 20px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+
+		.f124 {
+			margin: 95px 40px 0 0!important;
+			text-align: right;
+
+			i:after {
+				left: -50px!important;
+				top: 28px!important
+			}
 		}
 	}
 

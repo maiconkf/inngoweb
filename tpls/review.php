@@ -14,15 +14,36 @@
 			<div class="container">
 				<div class="col m7 center-block">
 					<ul class="clearfix">
-						<li class="f24 hd-light white-text left">1. Select a Room</li>
-						<li class="f24 hd-light white-text left">2. Payment</li>
-						<li class="f24 hd-light white-text left active">3. Review</li>
-						<li class="f24 hd-light white-text left">4. Confirmation</li>
+						<li class="f24 left"><a href="javascript:;" class="hd-light white-text">1. Select a Room</a></li>
+						<li class="f24 left"><a href="javascript:;" class="hd-light white-text">2. Payment</a></li>
+						<li class="f24 left active"><a href="javascript:;" class="hd-light white-text">3. Review</a></li>
+						<li class="f24 left"><a href="javascript:;" class="hd-light white-text">4. Confirmation</a></li>
 					</ul>
 				</div>
-				<p class="hd-medium f340 white-text left"><i></i></p>
+				<p class="hd-medium f124 white-text center-align"><i></i>Review</p>
 			</div>
 		</div>
+		<div class="container clearfix">
+			<div class="box-reservation col m9 center-block">
+				<div class="col m7 center-block">
+					<h1 class="f94 hd-medium center-align">Your Reservation</h1>
+					<div class="text">
+						<p class="f18 a-light">
+							Inn and Go Plaza Kuwait is a mere 20 minutes from the airport and in the vicinity of The Grand Mosque of Kuwait, Kuwait Tower, Liberation Tower, and the Scientific Museum. Here for work? Enjoy high-speed internet access, meeting facilities and a ballroom for functions that can hold up to 250 guests.
+						</p>
+					</div>
+					<p class="f20 a-regular black-text"><b>Rakan Jordan Smith</b></p>
+					<p class="f20 a-regular black-text">rakansmith@gmail.com</p>
+					<p class="f20 a-regular black-text"><b>129 5th Avenue New York 78701</b></p>
+					<p class="f20 a-regular black-text">129-398-239</p>
+					<p class="f20 a-regular black-text"><b>American Express ending in 8923</b></p>
+					<p class="f20 a-regular black-text">rakanjordan@gmail.com</p>
+					<p class="f20 a-regular black-text"><b>Flight Number A938</b></p>
+					<a href="../tpls/" class="btn"><span class="left">Confirm</span> <i class="material-icons">trending_flat</i></a>
+				</div>
+			</div>
+		</div>
+		<?php include_once('includes/footer.php'); ?>
 		<script src="../dist/js/scripts.min.js"></script>
 	</body>
 </html>

@@ -13,7 +13,7 @@
 		<div id="intern" class="clearfix">
 			<div class="congratulations container clearfix">
 				<h1 class="f145 hd-medium center-align">Congratulations</h1>
-				<div class="col m6 center-block">
+				<div class="col m6 center-block clearfix">
 					<div class="col m11">
 						<p class="f18 a-light center-align">
 							Well-appointed with queen or twin beds our guestrooms fully carpeted, high speed wired internet, international or local direct dial, mini bar, color television with satellite programmes, 24 hours in- room dining, laundry service, safety deposit box.
