@@ -5,6 +5,7 @@ app.init = function init() {
 	app.datePicker();
 	app.scrollPage();
 	app.viewMore();
+	app.maps();
 };
 
 app.openMenu = function() {
@@ -91,5 +92,15 @@ app.viewMore = function() {
 	});
 };
 
+app.maps = function() {
+	$('.maps').off().on({
+		'click' : function() {
+			$('.maps iframe').css('pointer-events', 'auto');
+		},
+		'mouseleave' : function() {
+			$('.maps iframe').css('pointer-events', 'none');
+		}
+	});
+};
 
 app.init();

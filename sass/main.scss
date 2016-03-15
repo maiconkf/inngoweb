@@ -709,6 +709,105 @@ $lineHeight : 34.6px;
 	}
 }
 
+/* CONTACT US */
+#contact-map {
+	position: relative;
+
+	.maps iframe {
+		pointer-events: none;
+	}
+
+	.box-address {
+		position: absolute;
+		top: 140px;
+		left: 0;
+		padding: 135px 0 115px;
+		-webkit-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.5);
+
+		.city {
+			line-height: 1.1;
+			margin-bottom: 90px
+		}
+
+		.f18 {
+			line-height: 41.6px;
+		}
+
+		.m6 {
+			padding: 0;
+			margin: 50px 0 145px
+		}
+
+		.social-media {
+			clear: both;
+
+			a {
+				margin: 0 26px 0 16px;
+
+				&.facebook {
+					@include sprite($facebook-white);
+				}
+
+				&.twitter {
+					@include sprite($twitter-white);
+				}
+
+				&.instagram {
+					@include sprite($instagram-white);
+				}
+			}
+		}
+	}
+
+	.get-touch {
+		margin: 360px auto 420px;
+
+		.f22 {
+			line-height: 41.6px;
+			color: #434343;
+		}
+
+		#contact {
+			margin-top: 170px!important;
+			clear: both;
+
+			input, textarea {
+				border: 3px solid #f3f3f3;
+				padding: 0 40px;
+				height: 90px;
+				line-height: 90px;
+				color: #979797;
+				font-size: 22px;
+				margin-bottom: 30px;
+				box-sizing: border-box;
+
+				&:focus {
+					border-bottom: 3px solid #f3f3f3!important;
+    				box-shadow: inherit!important;
+				}
+			}
+
+			textarea {
+				height: 300px!important;
+				width: 100%!important;
+			}
+
+			.btn {
+				width: 100%;
+				height: 90px;
+				line-height: 90px;
+				border: solid 3px #f495ac;
+				color: #f495ac;
+				background-color: #ddc979;
+				margin-top: 65px;
+				clear: both;
+			}
+		}
+	}
+}
+
 /*  FOOTER */
 #footer {
 	clear: both;

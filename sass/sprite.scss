@@ -1,8 +1,11 @@
 $twitter: -0px -0px 24px 22px;
 $instagram: -0px -22px 23px 23px;
 $facebook: -0px -45px 16px 25px;
-$calendar: -0px -70px 29px 31px;
-$arrow-scroll: -0px -101px 47px 47px;
+$twitter-white: -0px -70px 33px 29px;
+$calendar: -0px -99px 29px 31px;
+$instagram-white: -0px -130px 33px 33px;
+$facebook-white: -0px -163px 22px 36px;
+$arrow-scroll: -0px -199px 47px 47px;
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
