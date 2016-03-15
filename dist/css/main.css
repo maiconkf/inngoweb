@@ -678,10 +678,20 @@
       #booking .f124 i:after {
         left: -50px !important;
         top: 28px !important; }
+  .box-address {
+    width: 50%; }
+    .box-address .m8 {
+      width: 82% !important; }
+  .get-touch .m7 {
+    width: 67% !important; }
+  .get-touch #contact {
+    width: 60% !important; }
   .f58 {
     font-size: 41px; }
   .f60 {
     font-size: 46px; }
+  .f144 {
+    font-size: 114px; }
   .f145 {
     font-size: 100px; }
   .f192 {
