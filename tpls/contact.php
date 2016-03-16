@@ -13,7 +13,7 @@
 				<a href="javascript:;" class="logo left"><img src="../dist/img/inn-go-logo.png" alt="Inn & Go - Kuwait Hotel Paza" title="Inn & Go - Kuwait Hotel Paza"></a>
 				<div class="right">
 					<p class="lang left a-light white-text f15"><u>En</u></p>
-					<button class="hamburger hamburger--squeeze right" type="button" aria-label="Menu" aria-controls="navigation">
+					<button class="hamburger hamburger--squeeze open-modal right" type="button" aria-label="Menu" aria-controls="navigation">
 						<span class="hamburger-box">
 							<span class="hamburger-inner"></span>
 						</span>

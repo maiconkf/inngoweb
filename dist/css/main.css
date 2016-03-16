@@ -103,6 +103,54 @@
         padding: 0;
         margin-left: 24px; }
 
+#menu {
+  height: 111px;
+  border-bottom: 2px solid #ececec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 33px 0;
+  z-index: 10; }
+  #menu .check-booking .calendar {
+    width: 157px;
+    height: 45px;
+    line-height: 45px;
+    position: relative; }
+    #menu .check-booking .calendar input {
+      border: 1px solid #E6E6E6;
+      padding: 0 14px;
+      width: 120px;
+      cursor: pointer;
+      box-sizing: border-box; }
+    #menu .check-booking .calendar .box-calendar {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 38px;
+      height: 45px;
+      border: 1px solid #E6E6E6; }
+      #menu .check-booking .calendar .box-calendar .icon-calendar {
+        background-position: 0px -121px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: block;
+        width: 29px;
+        height: 31px;
+        margin: 7px auto; }
+    #menu .check-booking .calendar:first-child {
+      margin-right: 14px; }
+  #menu .check-booking .btn {
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 20px;
+    display: block;
+    padding: 0; }
+  #menu .hamburger {
+    margin-top: -3px !important; }
+
 #modal {
   position: fixed;
   top: 100vh;
@@ -295,54 +343,6 @@
         padding: 0; }
 
 /* PRIVACY POLICE */
-#layout-two #menu {
-  height: 111px;
-  border-bottom: 2px solid #ececec;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 33px 0;
-  z-index: 10; }
-  #layout-two #menu .check-booking .calendar {
-    width: 157px;
-    height: 45px;
-    line-height: 45px;
-    position: relative; }
-    #layout-two #menu .check-booking .calendar input {
-      border: 1px solid #E6E6E6;
-      padding: 0 14px;
-      width: 120px;
-      cursor: pointer;
-      box-sizing: border-box; }
-    #layout-two #menu .check-booking .calendar .box-calendar {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 38px;
-      height: 45px;
-      border: 1px solid #E6E6E6; }
-      #layout-two #menu .check-booking .calendar .box-calendar .icon-calendar {
-        background-position: 0px -121px;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        display: block;
-        width: 29px;
-        height: 31px;
-        margin: 7px auto; }
-    #layout-two #menu .check-booking .calendar:first-child {
-      margin-right: 14px; }
-  #layout-two #menu .check-booking .btn {
-    width: 160px;
-    height: 42px;
-    line-height: 42px;
-    margin: 0 20px;
-    display: block;
-    padding: 0; }
-  #layout-two #menu .hamburger {
-    margin-top: -3px !important; }
-
 #layout-two h1 {
   margin: 65px auto 10px; }
 
@@ -642,6 +642,42 @@
       padding: inherit; }
   .events .quotes .valign-wrapper {
     height: 1363px; }
+
+/* CARIEERS */
+.careers h1 {
+  margin-top: 140px; }
+
+.careers .open-positions {
+  width: 100%;
+  padding-bottom: 135px;
+  background-color: rgba(242, 241, 241, 0.87);
+  margin-top: 390px; }
+  .careers .open-positions h2 {
+    margin: -125px 0 105px; }
+  .careers .open-positions .wall {
+    counter-reset: wall;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2; }
+  .careers .open-positions .m6 {
+    padding: 0;
+    margin-bottom: 46px !important;
+    counter-increment: wall;
+    position: relative;
+    width: 100%; }
+  .careers .open-positions .box {
+    padding: 60px 0; }
+    .careers .open-positions .box h3 {
+      margin: 0; }
+    .careers .open-positions .box p {
+      margin-top: 30px;
+      line-height: 32.6px;
+      color: #434343; }
+    .careers .open-positions .box a {
+      margin-top: 65px;
+      border-bottom: 1px solid #F6A3B8;
+      display: block;
+      line-height: 1; }
 
 /*  FOOTER */
 #footer {

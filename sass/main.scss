@@ -2,6 +2,7 @@
 
 $colorBtn : #E2CF83;
 $lineHeight : 34.6px;
+$colorFont : #434343;
 
 .btn, .btn-large {
 	background-color: $colorBtn;
@@ -121,6 +122,66 @@ $lineHeight : 34.6px;
 			}
 		}
 
+	}
+}
+
+#menu {
+	height: 111px;
+	border-bottom: 2px solid #ececec;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 33px 0;
+	z-index: 10;
+
+	.check-booking {
+		.calendar {
+			width: 157px;
+			height: 45px;
+			line-height: 45px;
+			position: relative;
+
+			input {
+				border: 1px solid #E6E6E6;
+				padding: 0 14px;
+				width: 120px;
+				cursor: pointer;
+				box-sizing: border-box;
+			}
+
+			.box-calendar {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 38px;
+				height: 45px;
+				border: 1px solid #E6E6E6;
+
+				.icon-calendar {
+					@include sprite($calendar);
+					margin: 7px auto;
+				}
+			}
+
+			&:first-child {
+				margin-right: 14px;
+			}
+		}
+
+		.btn {
+			width: 160px;
+			height: 42px;
+			line-height: 42px;
+			margin: 0 20px;
+			display: block;
+			padding: 0
+		}
+	}
+
+	.hamburger {
+		margin-top: -3px!important
 	}
 }
 
@@ -426,66 +487,6 @@ $lineHeight : 34.6px;
 
 /* PRIVACY POLICE */
 #layout-two {
-	#menu {
-		height: 111px;
-		border-bottom: 2px solid #ececec;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background-color: #fff;
-		padding: 33px 0;
-		z-index: 10;
-
-		.check-booking {
-			.calendar {
-				width: 157px;
-				height: 45px;
-				line-height: 45px;
-				position: relative;
-
-				input {
-					border: 1px solid #E6E6E6;
-					padding: 0 14px;
-					width: 120px;
-					cursor: pointer;
-					box-sizing: border-box;
-				}
-
-				.box-calendar {
-					position: absolute;
-					right: 0;
-					top: 0;
-					width: 38px;
-					height: 45px;
-					border: 1px solid #E6E6E6;
-
-					.icon-calendar {
-						@include sprite($calendar);
-						margin: 7px auto;
-					}
-				}
-
-				&:first-child {
-					margin-right: 14px;
-				}
-			}
-
-			.btn {
-				width: 160px;
-				height: 42px;
-				line-height: 42px;
-				margin: 0 20px;
-				display: block;
-				padding: 0
-			}
-		}
-
-		.hamburger {
-			margin-top: -3px!important
-		}
-	}
-
 	h1 {
 		margin: 65px auto 10px;
 	}
@@ -496,7 +497,7 @@ $lineHeight : 34.6px;
 			line-height: 37.6px;
 			font-family: 'alright_sanslight';
 			margin-top: 50px;
-			color: #434343;
+			color: $colorFont;
 		}
 
 		h2 {
@@ -520,7 +521,7 @@ $lineHeight : 34.6px;
 	margin-bottom: 180px;
 
 	p {
-		color: #434343;
+		color: $colorFont;
 		line-height: $lineHeight + 7px;
 		margin-top: 10px
 	}
@@ -538,7 +539,7 @@ $lineHeight : 34.6px;
 			margin-bottom: 45px;
 			font-size: 18px;
 			line-height: $lineHeight;
-			color: #434343;
+			color: $colorFont;
 			font-family: 'alright_sanslight';
 		}
 	}
@@ -556,7 +557,7 @@ $lineHeight : 34.6px;
 	}
 
 	p {
-		color: #434343;
+		color: $colorFont;
 		line-height: $lineHeight;
 		margin-top: 70px
 	}
@@ -599,7 +600,7 @@ $lineHeight : 34.6px;
 	p {
 		font-style: italic;
 		line-height: $lineHeight;
-		color: #434343;
+		color: $colorFont;
 		margin: 85px auto 45px;
 	}
 
@@ -768,7 +769,7 @@ $lineHeight : 34.6px;
 
 		.f22 {
 			line-height: $lineHeight + 7px;
-			color: #434343;
+			color: $colorFont;
 		}
 
 		#contact {
@@ -827,7 +828,7 @@ $lineHeight : 34.6px;
 		p {
 			margin-top: 45px;
 			line-height: $lineHeight;
-			color: #434343;
+			color: $colorFont;
 		}
 	}
 
@@ -840,7 +841,7 @@ $lineHeight : 34.6px;
 
 		p {
 			line-height: $lineHeight;
-			color: #434343
+			color: $colorFont
 		}
 
 		.btn {
@@ -915,6 +916,59 @@ $lineHeight : 34.6px;
 
 		.valign-wrapper {
 			height: 1363px;
+		}
+	}
+}
+
+/* CARIEERS */
+.careers {
+	h1 {
+		margin-top: 140px;
+	}
+
+	.open-positions {
+		width: 100%;
+		padding-bottom: 135px;
+		background-color: rgba(242, 241, 241, 0.87);
+		margin-top: 390px;
+
+		h2 {
+			margin: -125px 0 105px;
+		}
+
+		.wall {
+  			counter-reset: wall;
+		    column-count: 2;
+		    -webkit-column-count: 2;
+		    -moz-column-count: 2;
+		}
+
+		.m6 {
+			padding: 0;
+			margin-bottom: 46px!important;
+			counter-increment: wall;
+			position: relative;
+			width: 100%;
+		}
+
+		.box {
+			padding: 60px 0;
+			h3 {
+				margin: 0;
+			}
+
+			p {
+				margin-top: 30px;
+				line-height: $lineHeight - 2px;
+				color: $colorFont;
+			}
+
+			a {
+				margin-top: 65px;
+				border-bottom: 1px solid #F6A3B8;
+				display: block;
+				line-height: 1;
+			}
 		}
 	}
 }
@@ -1028,7 +1082,7 @@ $lineHeight : 34.6px;
 		}
 
 		p {
-			color: #434343;
+			color: $colorFont;
 			line-height: $lineHeight;
 			margin-top: 40px
 		}

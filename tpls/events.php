@@ -207,8 +207,6 @@
 			</div>
 		</div>
 		<script src="../dist/js/scripts.min.js"></script>
-		    <script>$(document).ready(function() {
-    $('select').material_select();
-  });</script>
+		<script>$('select').material_select();</script>
 	</body>
 </html>
